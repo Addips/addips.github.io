@@ -18,11 +18,7 @@
       "paid"
     ]
   },
-  "servers": [
-    {
-      "url": "https://localhost:44399"
-    }
-  ],
+  "servers": [],
   "paths": {
     "/api/einstaklingar/{id}": {
       "get": {
