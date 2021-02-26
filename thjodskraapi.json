@@ -2,7 +2,7 @@
   "x-generator": "NSwag v13.9.4.0 (NJsonSchema v10.3.1.0 (Newtonsoft.Json v9.0.0.0))",
   "openapi": "3.0.0",
   "info": {
-    "title": "National Registry",
+    "title": "Einstaklingsskrá",
     "description": "The API retrieves information about individuals stored in the Icelandic registry.",
     "contact": {
       "name": "Skra.is",
@@ -1785,43 +1785,57 @@
           }
         },
         "additionalProperties": false,
+        "required": [
+          "kennitala",
+          "nafn",
+          "kynkodi",
+          "bannmerking",
+          "faedingardagur"
+        ],
         "properties": {
           "kennitala": {
             "type": "string",
-            "nullable": true
+            "description": "NationalId"
           },
           "nafn": {
             "type": "string",
-            "nullable": true
+            "description": "Legal name"
           },
           "eiginnafn": {
             "type": "string",
+            "description": "First name",
             "nullable": true
           },
           "millinafn": {
             "type": "string",
+            "description": "Middle name",
             "nullable": true
           },
           "kenninafn": {
             "type": "string",
+            "description": "Surname",
             "nullable": true
           },
           "fulltNafn": {
             "type": "string",
+            "description": "Full name",
             "nullable": true
           },
           "kynkodi": {
             "type": "string",
-            "nullable": true
+            "description": "Gender code - definition can be looked up using resources in \"Lyklar\""
           },
           "bannmerking": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Details can be found at: https://www.skra.is/thjonusta/einstaklingar/eg-i-thjodskra/bannmerking-aetlad-einstaklingum/"
           },
           "faedingardagur": {
             "type": "string",
+            "description": "Date of birth",
             "format": "date-time"
           },
           "logheimili": {
+            "description": "Information about legal domicile",
             "nullable": true,
             "oneOf": [
               {
@@ -1830,6 +1844,7 @@
             ]
           },
           "adsetur": {
+            "description": "Information about residence",
             "nullable": true,
             "oneOf": [
               {
@@ -1848,21 +1863,27 @@
           "sveitarfelagsnumer": "0000"
         },
         "additionalProperties": false,
+        "required": [
+          "heiti",
+          "postnumer"
+        ],
         "properties": {
           "heiti": {
             "type": "string",
-            "nullable": true
+            "description": "Street name"
           },
           "postnumer": {
             "type": "string",
-            "nullable": true
+            "description": "Postal code"
           },
           "stadur": {
             "type": "string",
+            "description": "Location",
             "nullable": true
           },
           "sveitarfelagsnumer": {
             "type": "string",
+            "description": "Municipality number - definition can be looked up using resources in \"Lyklar\"",
             "nullable": true
           }
         }
@@ -1879,17 +1900,23 @@
           "faedingardagur": "33.11.0930"
         },
         "additionalProperties": false,
+        "required": [
+          "faedingardagur"
+        ],
         "properties": {
           "sveitarfelagsnumer": {
             "type": "string",
+            "description": "Municipality number - definition can be looked up using resources in \"Lyklar\"",
             "nullable": true
           },
           "stadur": {
             "type": "string",
+            "description": "Location",
             "nullable": true
           },
           "faedingardagur": {
             "type": "string",
+            "description": "Date of birth",
             "format": "date-time"
           }
         }
@@ -1901,13 +1928,17 @@
           "land": "Ísland"
         },
         "additionalProperties": false,
+        "required": [
+          "kodi"
+        ],
         "properties": {
           "kodi": {
             "type": "string",
-            "nullable": true
+            "description": "The ISO Alpha-2 country code"
           },
           "land": {
             "type": "string",
+            "description": "Country",
             "nullable": true
           }
         }
@@ -1919,13 +1950,17 @@
           "breytt": "2021-01-28T17:09:02.044Z"
         },
         "additionalProperties": false,
+        "required": [
+          "trufelagskodi"
+        ],
         "properties": {
           "trufelagskodi": {
             "type": "string",
-            "nullable": true
+            "description": "Identification code - definition can be looked up using resources in \"Lyklar\""
           },
           "breytt": {
             "type": "string",
+            "description": "Last modified date",
             "format": "date-time",
             "nullable": true
           }
@@ -1944,37 +1979,47 @@
           "Breytt": ""
         },
         "additionalProperties": false,
+        "required": [
+          "huskodi",
+          "heimilisfang"
+        ],
         "properties": {
           "huskodi": {
             "type": "string",
-            "nullable": true
+            "description": "House identification code"
           },
           "fasteignanumer": {
             "type": "string",
+            "description": "Real estate number",
             "nullable": true
           },
           "heimilisfang": {
             "type": "string",
-            "nullable": true
+            "description": "Address"
           },
           "postnumer": {
             "type": "string",
+            "description": "Postal code",
             "nullable": true
           },
           "stadur": {
             "type": "string",
+            "description": "Location",
             "nullable": true
           },
           "sveitarfelagsnumer": {
             "type": "string",
+            "description": "Municipality number - definition can be looked up using resources in \"Lyklar\"",
             "nullable": true
           },
           "landakodi": {
             "type": "string",
+            "description": "The ISO Alpha-2 country code",
             "nullable": true
           },
           "breytt": {
             "type": "string",
+            "description": "Last modified date",
             "format": "date-time",
             "nullable": true
           }
@@ -1995,30 +2040,37 @@
         "properties": {
           "huskodi": {
             "type": "string",
+            "description": "House identification code",
             "nullable": true
           },
           "heimilisfang": {
             "type": "string",
+            "description": "Address",
             "nullable": true
           },
           "sveitarfelagsnumer": {
             "type": "string",
+            "description": "Municipality number - definition can be looked up using resources in \"Lyklar\"",
             "nullable": true
           },
           "postnumer": {
             "type": "string",
+            "description": "Postal code",
             "nullable": true
           },
           "stadur": {
             "type": "string",
+            "description": "Location",
             "nullable": true
           },
           "landakodi": {
             "type": "string",
+            "description": "The ISO Alpha-2 country code",
             "nullable": true
           },
           "breytt": {
             "type": "string",
+            "description": "Last modified date",
             "format": "date-time",
             "nullable": true
           }
@@ -2030,9 +2082,13 @@
           "erLograda": true
         },
         "additionalProperties": false,
+        "required": [
+          "erLograda"
+        ],
         "properties": {
           "erLograda": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Is of legal age"
           }
         }
       },
@@ -2048,18 +2104,22 @@
         "properties": {
           "kennitalaMaka": {
             "type": "string",
+            "description": "National id of spouse",
             "nullable": true
           },
           "nafnMaka": {
             "type": "string",
+            "description": "Name of spouse",
             "nullable": true
           },
           "hjuskaparkodi": {
             "type": "string",
+            "description": "Cohabitation code - definition can be looked up using resources in \"Lyklar\"",
             "nullable": true
           },
           "breytt": {
             "type": "string",
+            "description": "Last modified date",
             "nullable": true
           }
         }
@@ -2087,10 +2147,12 @@
         "properties": {
           "fjolskyldunumer": {
             "type": "string",
+            "description": "Details can be found at: https://www.skra.is/thjonusta/einstaklingar/eg-i-thjodskra/um-fjolskyldunumer/",
             "nullable": true
           },
           "einstaklingar": {
             "type": "array",
+            "description": "List of individuals with the same number",
             "nullable": true,
             "items": {
               "$ref": "#/components/schemas/Einstaklingur"
@@ -2105,14 +2167,23 @@
           "kennitala": "3311305959"
         },
         "additionalProperties": false,
+        "required": [
+          "nafn",
+          "kennitala",
+          "kynkodi"
+        ],
         "properties": {
           "nafn": {
             "type": "string",
-            "nullable": true
+            "description": "Full name"
           },
           "kennitala": {
             "type": "string",
-            "nullable": true
+            "description": "National id"
+          },
+          "kynkodi": {
+            "type": "string",
+            "description": "Gender code - definition can be looked up using resources in \"Lyklar\""
           }
         }
       },
@@ -2176,17 +2247,21 @@
           }
         },
         "additionalProperties": false,
+        "required": [
+          "kyn",
+          "hjuskapur"
+        ],
         "properties": {
           "kyn": {
             "type": "object",
-            "nullable": true,
+            "description": "List of all available gender codes and description",
             "additionalProperties": {
               "$ref": "#/components/schemas/Skilgreining"
             }
           },
           "hjuskapur": {
             "type": "object",
-            "nullable": true,
+            "description": "List of all available Cohabitation codes and descriptions for each gender",
             "additionalProperties": {
               "type": "object",
               "additionalProperties": {
@@ -2205,6 +2280,7 @@
         "properties": {
           "lysing": {
             "type": "string",
+            "description": "Description",
             "nullable": true
           }
         }
@@ -2216,13 +2292,17 @@
           "lysing": "Karl"
         },
         "additionalProperties": false,
+        "required": [
+          "kodi"
+        ],
         "properties": {
           "kodi": {
             "type": "string",
-            "nullable": true
+            "description": "Identification code"
           },
           "lysing": {
             "type": "string",
+            "description": "Description",
             "nullable": true
           }
         }
@@ -2235,17 +2315,22 @@
           "postnumer": "101"
         },
         "additionalProperties": false,
+        "required": [
+          "nafn"
+        ],
         "properties": {
           "nafn": {
             "type": "string",
-            "nullable": true
+            "description": "Municipality name"
           },
           "nafnThgf": {
             "type": "string",
+            "description": "Municipality name in dative",
             "nullable": true
           },
           "postnumer": {
             "type": "string",
+            "description": "Postal code",
             "nullable": true
           }
         }
