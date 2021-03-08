@@ -23,11 +23,7 @@
       "responsibleParty": "https://www.skra.is/um-okkur"
     }
   },
-  "servers": [
-    {
-      "url": "http://localhost:64105"
-    }
-  ],
+  "servers": [],
   "paths": {
     "/api/v1/einstaklingar/{id}": {
       "get": {
