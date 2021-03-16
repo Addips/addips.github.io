@@ -23,7 +23,11 @@
       "responsibleParty": "https://www.skra.is/um-okkur"
     }
   },
-  "servers": [],
+  "servers": [
+    {
+      "url": "http://localhost:64405"
+    }
+  ],
   "paths": {
     "/api/v1/einstaklingar/{id}": {
       "get": {
@@ -63,13 +67,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -117,13 +142,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -171,13 +217,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -225,13 +292,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -279,13 +367,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -333,13 +442,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -390,13 +520,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -444,13 +595,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -498,13 +670,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -552,13 +745,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -606,13 +820,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -663,13 +898,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -720,13 +976,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -777,13 +1054,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -845,13 +1143,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -902,13 +1221,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No individual exists with that national id."
+            "description": "No individual exists with that national id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -959,13 +1299,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No real estate exists with that id"
+            "description": "No real estate exists with that id",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -1012,10 +1373,24 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -1084,13 +1459,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No cohibition code exists with that id or gender code."
+            "description": "No cohibition code exists with that id or gender code.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -1148,13 +1544,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No gender code exists with that id."
+            "description": "No gender code exists with that id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -1194,10 +1611,24 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -1245,13 +1676,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "No religion code exists with that id."
+            "description": "No religion code exists with that id.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -1291,10 +1743,24 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -1342,13 +1808,34 @@
             }
           },
           "401": {
-            "description": "Authorization information is missing or invalid."
+            "description": "Authorization information is missing or invalid.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "404": {
-            "description": "Municipality does not exist."
+            "description": "Municipality does not exist.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           },
           "500": {
-            "description": "There was an error on the server side."
+            "description": "There was an error on the server side.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -1486,6 +1973,66 @@
           "sveitarfelagsnumer": {
             "type": "string",
             "description": "Municipality number - definition can be looked up using resources in \"Lyklar\"",
+            "nullable": true
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "description": "Error response",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "HTTP status code",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "Message describing the error"
+          },
+          "errors": {
+            "type": "array",
+            "description": "Detailed information of errors",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/ErrorDetails"
+            }
+          }
+        }
+      },
+      "ErrorDetails": {
+        "type": "object",
+        "description": "Detailed error message",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "HTTP status code",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "Message describing the error",
+            "nullable": true
+          },
+          "help": {
+            "type": "string",
+            "description": "URL to a page explaining the error and possible solutions",
+            "nullable": true
+          },
+          "trackingId": {
+            "type": "string",
+            "description": "Identifier for mapping failures to service internal codes",
+            "nullable": true
+          },
+          "param": {
+            "type": "string",
+            "description": "Name of the parameter which was incorrect",
             "nullable": true
           }
         }
